@@ -1,0 +1,22 @@
+kv-reuse-econ-traces
+Copyright the kv-reuse-econ-traces authors.
+
+This product includes data derived from third-party work:
+
+--------------------------------------------------------------------------------
+Mooncake
+Copyright (c) kvcache-ai
+Licensed under the Apache License, Version 2.0
+Project: https://github.com/kvcache-ai/Mooncake
+Publication: Mooncake, USENIX FAST '25
+--------------------------------------------------------------------------------
+
+The 29 rows in `data/data.jsonl` whose `source` field is `mooncake_fast25_trace` are
+DERIVED from the Mooncake conversation trace: each row records a first-touch prefill
+accounting quantity computed over one workload of that trace. The rows are aggregates
+and contain no prompt text, no response text, and no conversation content.
+
+The 36 rows whose `source` is `synthetic_ramp` are our own and are not derived from
+Mooncake.
+
+If you redistribute the derived rows, carry this attribution with them.

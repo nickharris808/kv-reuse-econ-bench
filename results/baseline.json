@@ -1,0 +1,31 @@
+{
+  "benchmark": "kv-reuse-econ-bench",
+  "what_it_checks": "that our published first-touch-prefill headline reproduces from the raw per-workload rows",
+  "result": "PASS",
+  "suite_36_workloads": {
+    "recomputed_mean": 0.89976,
+    "cert_mean": 0.89976,
+    "match": true,
+    "min": 0.54936,
+    "max": 0.99805,
+    "floor": 0.3,
+    "above_floor": 36,
+    "below_floor": 0
+  },
+  "real_mooncake_trace": {
+    "recomputed_mean": 0.66804,
+    "cert_mean": 0.66804,
+    "match": true,
+    "min": 0.0,
+    "max": 0.97959,
+    "floor": 0.3,
+    "above_floor": 23,
+    "below_floor": 6
+  },
+  "the_finding": "The 36-workload headline is an EXACT arithmetic identity: cut(n) = 256*floor(n/256)/n, reproducible to five decimals without the GPU data. The real-trace mean is lower (0.668) and 6 of 29 workloads fall BELOW the pre-registered 0.30 floor. Both are reported; neither is hidden.",
+  "reproduce": "python -m econ_bench --verify",
+  "fixtures": [
+    "fixtures/fleet_econ_eprocess_cert.json",
+    "fixtures/fleet_econ_realtrace_cert.json"
+  ]
+}

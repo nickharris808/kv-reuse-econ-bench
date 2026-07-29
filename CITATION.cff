@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+title: "kv-reuse-econ-bench: recompute our economics headline"
+abstract: >-
+  recompute our economics headline
+authors:
+  - family-names: Harris
+    given-names: Nick
+repository-code: "https://github.com/nickharris808/kv-reuse-econ-bench"
+url: "https://github.com/nickharris808/kv-reuse-econ-bench"
+license: Apache-2.0
+type: software
+keywords:
+  - verification
+  - abstention
+  - reproducibility
