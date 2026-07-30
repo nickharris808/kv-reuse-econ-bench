@@ -10,9 +10,13 @@ A standard measurement for **first-touch prefill cut** — the fraction of promp
 did *not* recompute because a prefix was already resident — that recomputes our own headline from
 the raw rows and shows you exactly how much of it is a system property.
 
+**Not yet on PyPI.** The command below is the one that works today. It installs from this repository, pinned to a tag.
+
 ```bash
-pip install kv-reuse-econ-bench
+pip install "git+https://github.com/nickharris808/kv-reuse-econ-bench@v0.1.0"
 ```
+
+`pip install kv-reuse-econ-bench` is the intended command once the name is published. **It 404s today**, which is why it is not the first step above. The tag is pinned rather than `@main` so a reader installs the exact code this README documents.
 
 ## Why this exists
 
@@ -42,9 +46,13 @@ the 90.0% suite mean to `results/data/statefabric/fleet_econ_eprocess_cert.json`
 
 ## Install
 
+**Not yet on PyPI.** The command below is the one that works today. It installs from this repository, pinned to a tag.
+
 ```bash
-pip install kv-reuse-econ-bench     # zero dependencies; fixtures bundled
+pip install "git+https://github.com/nickharris808/kv-reuse-econ-bench@v0.1.0"
 ```
+
+`pip install kv-reuse-econ-bench` is the intended command once the name is published. **It 404s today**, which is why it is not the first step above. The tag is pinned rather than `@main` so a reader installs the exact code this README documents.
 
 ## 30-second quickstart
 
@@ -198,3 +206,6 @@ corpus, and the certificate-*issuing* faucet — is covered by filed patents and
 
 **Reading is free. Enforcing is licensed.**
 <!-- /PORTFOLIO -->
+
+**Provenance.** The 512-token divergence horizon resolves to
+`results/data/statefabric/gpu/elision_divergence.json`, registered in `oss/provenance.py`.
